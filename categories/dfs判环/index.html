@@ -773,35 +773,92 @@
             <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            <%= __('widget.recents') %>
+            最新文章
         </h3>
-        <% posts.forEach(post => { %>
+        
         <article class="media">
-            <% if (thumbnail) { %>
-            <a href="<%- url_for(post.link ? post.link : post.path) %>" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="<%= post.thumbnail %>" alt="<%= post.title %>">
-                </p>
+            
+            <a href="/2019/11/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%86%99printf-%E5%BA%93%E5%87%BD%E6%95%B0printf%E7%9A%84%E5%AE%9E%E7%8E%B0/" class="media-left">
             </a>
-            <% } %>
+            
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="<%= date_xml(post.date) %>"><%= date(post.date) %></time></div>
-                    <a href="<%- url_for((post.link?post.link:post.path)) %>" class="title has-link-black-ter is-size-6 has-text-weight-normal"><%= post.title %></a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-20T14:41:33.000Z">2019-11-20</time></div>
+                    <a href="/2019/11/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%86%99printf-%E5%BA%93%E5%87%BD%E6%95%B0printf%E7%9A%84%E5%AE%9E%E7%8E%B0/" class="title has-link-black-ter is-size-6 has-text-weight-normal">自己动手写printf -- 库函数printf的实现[转载]</a>
                     <p class="is-size-7 is-uppercase">
-                        <%- list_categories(post.categories(), {
-                            show_count: false,
-                            class: 'has-link-grey ',
-                            depth:2,
-                            style: 'none',
-                            separator: ' / '}) %>
+                        <a class="has-link-grey -link" href="/categories/%E5%8F%98%E9%95%BF%E5%8F%82%E6%95%B0/">变长参数</a> / <a class="has-link-grey -link" href="/categories/%E5%8F%98%E9%95%BF%E5%8F%82%E6%95%B0/linux%E5%86%85%E6%A0%B8/">linux内核</a>
                     </p>
                 </div>
             </div>
         </article>
-        <% }) %>
+        
+        <article class="media">
+            
+            <a href="/2019/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E8%B7%AF%E4%B9%A0%E9%A2%98-1/" class="media-left">
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-12T10:17:52.000Z">2019-11-12</time></div>
+                    <a href="/2019/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E8%B7%AF%E4%B9%A0%E9%A2%98-1/" class="title has-link-black-ter is-size-6 has-text-weight-normal">计算机网路习题(1)</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/11/xv6-shell%E7%90%86%E8%A7%A3/" class="media-left">
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-09T02:34:45.000Z">2019-11-09</time></div>
+                    <a href="/2019/11/xv6-shell%E7%90%86%E8%A7%A3/" class="title has-link-black-ter is-size-6 has-text-weight-normal">xv6 shell理解</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a> / <a class="has-link-grey -link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/xv6/">xv6</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/11/Implement-a-Shell-by-yourself-MIT-xv6-shell/" class="media-left">
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-09T01:42:05.000Z">2019-11-09</time></div>
+                    <a href="/2019/11/Implement-a-Shell-by-yourself-MIT-xv6-shell/" class="title has-link-black-ter is-size-6 has-text-weight-normal"> Implement a Shell by yourself -- MIT xv6 shell(转载)</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a> / <a class="has-link-grey -link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/xv6/">xv6</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/11/Operating-system-interfaces/" class="media-left">
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-06T13:21:58.000Z">2019-11-06</time></div>
+                    <a href="/2019/11/Operating-system-interfaces/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Operating system interfaces</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a> / <a class="has-link-grey -link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/xv6/">xv6</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
     </div>
 </div>
+
         
             <div class="card widget">
     <div class="card-content">
@@ -1483,35 +1540,92 @@
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            <%= __('widget.recents') %>
+            最新文章
         </h3>
-        <% posts.forEach(post => { %>
+        
         <article class="media">
-            <% if (thumbnail) { %>
-            <a href="<%- url_for(post.link ? post.link : post.path) %>" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="<%= post.thumbnail %>" alt="<%= post.title %>">
-                </p>
+            
+            <a href="/2019/11/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%86%99printf-%E5%BA%93%E5%87%BD%E6%95%B0printf%E7%9A%84%E5%AE%9E%E7%8E%B0/" class="media-left">
             </a>
-            <% } %>
+            
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="<%= date_xml(post.date) %>"><%= date(post.date) %></time></div>
-                    <a href="<%- url_for((post.link?post.link:post.path)) %>" class="title has-link-black-ter is-size-6 has-text-weight-normal"><%= post.title %></a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-20T14:41:33.000Z">2019-11-20</time></div>
+                    <a href="/2019/11/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%86%99printf-%E5%BA%93%E5%87%BD%E6%95%B0printf%E7%9A%84%E5%AE%9E%E7%8E%B0/" class="title has-link-black-ter is-size-6 has-text-weight-normal">自己动手写printf -- 库函数printf的实现[转载]</a>
                     <p class="is-size-7 is-uppercase">
-                        <%- list_categories(post.categories(), {
-                            show_count: false,
-                            class: 'has-link-grey ',
-                            depth:2,
-                            style: 'none',
-                            separator: ' / '}) %>
+                        <a class="has-link-grey -link" href="/categories/%E5%8F%98%E9%95%BF%E5%8F%82%E6%95%B0/">变长参数</a> / <a class="has-link-grey -link" href="/categories/%E5%8F%98%E9%95%BF%E5%8F%82%E6%95%B0/linux%E5%86%85%E6%A0%B8/">linux内核</a>
                     </p>
                 </div>
             </div>
         </article>
-        <% }) %>
+        
+        <article class="media">
+            
+            <a href="/2019/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E8%B7%AF%E4%B9%A0%E9%A2%98-1/" class="media-left">
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-12T10:17:52.000Z">2019-11-12</time></div>
+                    <a href="/2019/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E8%B7%AF%E4%B9%A0%E9%A2%98-1/" class="title has-link-black-ter is-size-6 has-text-weight-normal">计算机网路习题(1)</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/11/xv6-shell%E7%90%86%E8%A7%A3/" class="media-left">
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-09T02:34:45.000Z">2019-11-09</time></div>
+                    <a href="/2019/11/xv6-shell%E7%90%86%E8%A7%A3/" class="title has-link-black-ter is-size-6 has-text-weight-normal">xv6 shell理解</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a> / <a class="has-link-grey -link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/xv6/">xv6</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/11/Implement-a-Shell-by-yourself-MIT-xv6-shell/" class="media-left">
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-09T01:42:05.000Z">2019-11-09</time></div>
+                    <a href="/2019/11/Implement-a-Shell-by-yourself-MIT-xv6-shell/" class="title has-link-black-ter is-size-6 has-text-weight-normal"> Implement a Shell by yourself -- MIT xv6 shell(转载)</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a> / <a class="has-link-grey -link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/xv6/">xv6</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/11/Operating-system-interfaces/" class="media-left">
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-06T13:21:58.000Z">2019-11-06</time></div>
+                    <a href="/2019/11/Operating-system-interfaces/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Operating system interfaces</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a> / <a class="has-link-grey -link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/xv6/">xv6</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
     </div>
 </div>
+
     
         <div class="card widget">
     <div class="card-content">
