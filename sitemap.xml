@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.mysakure.com/2020/03/STL-iterator-read/</loc>
+    
+    <lastmod>2020-03-15T12:59:22.091Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.mysakure.com/2020/01/codeforces1294/</loc>
     
     <lastmod>2020-01-29T05:48:29.000Z</lastmod>
